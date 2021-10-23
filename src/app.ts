@@ -18,8 +18,6 @@ io.on("connection", socket => {
     console.log(`Usuário conectad no socket ${socket.id}`)
 })
 
-
-
 app.use(express.json());
 
 app.use(router);
