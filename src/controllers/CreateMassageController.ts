@@ -11,9 +11,7 @@ class CreateMassageController{
         const service = new CreateMessageService()
 
         const result = await service.execute(message, user_id)
-
-        io.emit("new_message",)
-
+        
         return response.json(result)
     }
 }
